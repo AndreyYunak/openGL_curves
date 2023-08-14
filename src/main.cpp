@@ -122,8 +122,9 @@ int main(void)
 	
 	
 
-	Shader ourShader("C:/Users/Andrey/source/repos/Curves/openGL_curves/src/Renderer/shader.vs", 
-							"/Users/Andrey/source/repos/Curves/openGL_curves/src/Renderer/shader.frag");
+	//Shader ourShader("C:/Users/Andrey/source/repos/Curves/openGL_curves/src/Renderer/shader.vs", 
+		//					"/Users/Andrey/source/repos/Curves/openGL_curves/src/Renderer/shader.frag");
+	Shader ourShader(".\\Shader\\shader.vs", ".\\Shader\\shader.frag");
 	std::list<std::shared_ptr<Geometric_curves_3D>> container1;
 	std::cout << "ADD type:\n\t 0 - circle\n\t 1 - ellipse\n\t 2 - helix\n 5 - EXIT\n";
 	
@@ -310,7 +311,10 @@ int main(void)
         glfwSwapBuffers(window);
 
         /* Poll for and process events */
-        glfwPollEvents();
+        glfwPollEvents(); 
+		//glfwWaitEvents(); //Ч лучший выбор, ≈сли вместо этого вам нужно обновить рендеринг только после того, 
+		//как вы получили новые входные данные. ќн ждет, пока не будет получено хот€ бы одно событие, тем временем перевод€ поток в сп€щий режим, 
+		//а затем обрабатывает все полученные событи€. Ёто экономит много циклов ÷ѕ и полезно, например, дл€ многих видов инструментов редактировани€.
 		
     }
 
