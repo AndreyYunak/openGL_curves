@@ -1,0 +1,25 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "задача-CMakeLists",
+      "appliesTo": "CMakeLists.txt",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-openGL_curves",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-openGL_curves",
+      "appliesTo": "/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "задача-CMakeLists",
+      "appliesTo": "CMakeLists.txt",
+      "type": "launch"
+    }
+  ]
+}

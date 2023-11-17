@@ -1,0 +1,114 @@
+GLfloat menu_sq[] = {
+	 0.5f,  0.5f, 0.0f,  // top right
+	 0.5f, -0.5f, 0.0f,  // bottom right
+	-0.5f, -0.5f, 0.0f,  // bottom left
+	-0.5f,  0.5f, 0.0f,   // top left 
+	/* 0.5f,  0.5f, -0.5f,  // top right
+	 0.5f, -0.5f, -0.5f,  // bottom right
+	-0.5f, -0.5f, -0.5f,  // bottom left
+	-0.5f,  0.5f, -0.5f   // top left
+	*/
+};
+
+//add CURVES
+		std::list<std::shared_ptr<Geometric_curves_3D>> container1;
+		std::cout << "ADD type:\n\t 0 - circle\n\t 1 - ellipse\n\t 2 - helix\n 5 - EXIT\n";
+
+		int switch_on = 0;
+		while (switch_on != 5) {
+			std::cout << "Input: ";
+			//std::cin >> switch_on;
+			std::cout << std::endl;
+			switch (switch_on)
+			{
+
+			case 0: { //Circle
+				double R;
+				std::cout << "Input R: ";
+				//std::cin >> R;
+				R = 12;
+				if (container1.empty()) XYZ_scale = R;
+				std::cout << std::endl;
+				try {
+					container1.emplace_back(std::make_shared<Circle>(R));
+				}
+				catch (const char* error) {
+					std::cerr << error << std::endl;
+					break;
+				};
+				switch_on = 5;
+				break;
+			};
+			case 1: {
+				double Rx, Ry;
+				std::cout << "Input Rx: ";
+				std::cin >> Rx;
+				std::cout << std::endl;
+				std::cout << "Input Ry: ";
+				std::cin >> Ry;
+				if (container1.empty()) XYZ_scale = Rx;
+				std::cout << std::endl;
+				try {
+					container1.emplace_back(std::make_shared<Ellipse>(Rx, Ry));
+				}
+				catch (const char* error) {
+					std::cerr << error << std::endl;
+					break;
+				};
+				break;
+			};
+			case 2: {
+				double R, Step;
+				std::cout << "Input R: ";
+				std::cin >> R;
+				std::cout << std::endl;
+				if (container1.empty()) XYZ_scale = R;
+				std::cout << "Input Step: ";
+				std::cin >> Step;
+				std::cout << std::endl;
+				try {
+					container1.emplace_back(std::make_shared<Helix>(R, Step));
+				}
+				catch (const char* error) {
+					std::cerr << error << std::endl;
+					break;
+				};
+				break;
+			};
+			default:
+				break;
+			};
+		};
+		double step = 1;
+		point3D point;
+		int n_of_point = 0;
+		std::vector<float> container2;
+		for (auto it = container1.begin(); it != container1.end(); it++)
+		{
+			for (double t = 0; t < (360 * 5); t += step) {
+				point = (*it)->get_point3D(t);
+				container2.push_back(point.x);
+				container2.push_back(point.y);
+				container2.push_back(point.z);
+				n_of_point++;
+			};
+		};
+
+
+	VertexArray va;
+	VertexBuffer vb(container2.data(), container2.size() * sizeof(float));
+	VertexBufferLayout layout;
+	layout.Push<float>(3);
+	va.AddBuffer(vb, layout);
+	
+
+	VertexArray va_c;
+	VertexBuffer vb_c(vertices, sizeof(vertices));
+	//unsigned int EBO;	
+	//glGenBuffers(1, &EBO);
+	VertexBufferLayout layout_c;
+	layout_c.Push<float>(3,2);
+	va_c.AddBuffer(vb_c, layout_c);
+	// texture coord attribute
+	//glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+	//glEnableVertexAttribArray(2);

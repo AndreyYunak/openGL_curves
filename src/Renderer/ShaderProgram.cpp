@@ -81,6 +81,11 @@ void Shader::Use()
 	glUseProgram(this->Program);
 }
 
+void Shader::setInt(const std::string& name, int value) const
+{
+	glUniform1i(glGetUniformLocation(this->Program, name.c_str()), value);
+}
+
 Shader::~Shader() {
 	glDeleteProgram(this->Program);
 };
