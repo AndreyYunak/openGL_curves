@@ -1,13 +1,10 @@
 {
   "OutputFoldersPerTargetSystem": {
-    "Локальный компьютер": [
-      "out\\build\\x64-Debug",
-      "out\\install\\x64-Debug"
-    ]
+    "\u041B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440": []
   },
   "ExpandedNodes": [
     ""
   ],
-  "SelectedNode": "\\SimpleTexturedOpenGL.sln",
+  "SelectedNode": "\\3D_curves.sln",
   "PreviewInSolutionExplorer": false
 }

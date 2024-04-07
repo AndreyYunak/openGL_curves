@@ -8,7 +8,8 @@
 #include <list>
 #include <memory>
 
-#include "../external/3D_curves/3D_curves.h"
+//#include "../external/3D_curves/3D_curves.h"
+#include "3D_curves/3D_curves.h"
 #include "Renderer/ShaderProgram.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "Renderer/stb_image.h"
@@ -16,23 +17,20 @@
 #include "IndexBuffer.h"
 #include "VertexBuffer.h"
 #include "VertexArray.h"
-/*
-#include "imgui/"
-#include "imgui/imgui.h"
-#include "imgui/imgui_impl_glfw.h"
-#include "imgui/imgui_impl_opengl3.h"
-*/
 
-#include "../external/imgui/imgui.h"
-#include "../external/imgui/imgui_impl_glfw.h"
-#include "../external/imgui/imgui_impl_opengl3.h"
+#include "imgui.h"
+#include "imgui_impl_glfw.h"
+#include "imgui_impl_opengl3.h"
 //#include "Model.h"
+#include "Scene/Scene.h"
+#include "Scene/SceneTest.h"
 
 //frag_color = vec4(color);
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods);
 void processInput(GLFWwindow* window);
 
 // settings
@@ -41,10 +39,12 @@ const unsigned int SCR_HEIGHT = 600;
 bool LineMode = true;
 
 // camera
-Camera camera(glm::vec3(30.0f, 30.0f, 30.0f));
-float lastX = SCR_WIDTH / 2.0f;
-float lastY = SCR_HEIGHT / 2.0f;
-bool firstMouse = true;
+//Camera camera(glm::vec3(30.0f, 30.0f, 30.0f));
+Camera camera(glm::vec3(0.0f, 0.0f, 30.0f));
+double lastX; // = SCR_WIDTH / 2.0;
+double lastY; // = SCR_HEIGHT / 2.0;
+//bool firstMouse = true;
+bool LeftPress; // = glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT);
 
 // timing
 float deltaTime = 0.0f;	// time between current frame and last frame
@@ -103,7 +103,8 @@ float a = 1, b = 1, h = 0.2;
 /*
 glm::vec3 cubePositions[] = {
 	glm::vec3(0.0f,  0.0f,  0.0f),
-	glm::vec3(2.0f,  5.0f, -15.0f),
+	glm::vec3(2.0f,  5.0f, -1
+	5.0f),
 	glm::vec3(-1.5f, -2.2f, -2.5f),
 	glm::vec3(-3.8f, -2.0f, -12.3f),
 	glm::vec3(2.4f, -0.4f, -3.5f),
@@ -129,43 +130,44 @@ static std::array<Vertex, 8> CreateFloor(float x, float y)
 
 	Vertex v0;
 	v0.Position = { x, y, -0.5f * h };
-	v0.TexCoords = {};
+	v0.TexCoords = {0, 0};
 
 	Vertex v1;
 	v1.Position = { x + size, y, -0.5f * h };
-	v1.TexCoords = {};
+	v1.TexCoords = { 0, 0 };
 
 	Vertex v2;
 	v2.Position = { x + size,  y + size, -0.5f * h };
-	v2.TexCoords = {};
+	v2.TexCoords = { 0, 0 };
 
 	Vertex v3;
 	v3.Position = { x,  y + size, -0.5f * h };
-	v3.TexCoords = {};
+	v3.TexCoords = { 0, 0 };
 	//___________
 	Vertex v4;
 	v4.Position = { x, y, 0.0f * h };
-	v4.TexCoords = {};
+	v4.TexCoords = { 0, 0 };
 
 	Vertex v5;
 	v5.Position = { x + size, y, 0.0f * h };
-	v5.TexCoords = {};
+	v5.TexCoords = { 1, 0 };
 
 	Vertex v6;
 	v6.Position = { x + size,  y + size,  0.0f };
-	v6.TexCoords = {};
+	v6.TexCoords = {1, 1};
 
 	Vertex v7;
 	v7.Position = { x,  y + size,  0.0f };
-	v7.TexCoords = {};
+	v7.TexCoords = {0, 1};
 
+	/////////////////
 	Vertex v8;
 	v8.Position = { 0.5f,  0.5f,  0.0f };
-	v8.TexCoords = {};
+	v8.TexCoords = { 0, 0 };
 
 	Vertex v9;
 	v9.Position = { 0.5f,  0.5f,  0.0f };
-	v9.TexCoords = {};
+	v9.TexCoords = { 0, 0 };
 
 	Vertex v10;
 	v10.Position = { -0.5f,  0.5f,  0.0f };
@@ -388,7 +390,6 @@ public:
 int main(void)
 {
 	// glfw: initialize and configure
-	// ------------------------------
 	glfwInit(); 
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);
@@ -408,9 +409,10 @@ int main(void)
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	glfwSetCursorPosCallback(window, mouse_callback);
 	glfwSetScrollCallback(window, scroll_callback);
+	glfwSetMouseButtonCallback(window, mouse_button_callback);
 
 	// tell GLFW to capture our mouse
-	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
 
 	// if(glewInit() != GLEW_OK)     ????????glad?
 
@@ -423,14 +425,60 @@ int main(void)
 	glClearColor(0, 0, 0, 1);
 	
 
-	// tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
-	stbi_set_flip_vertically_on_load(true);
 
 	//Shader ourShader("C:/Users/Andrey/source/repos/Curves/openGL_curves/src/Renderer/shader.vs", 
 		//					"/Users/Andrey/source/repos/Curves/openGL_curves/src/Renderer/shader.frag");
 	Shader ourShader(".\\Shader\\shader.vs", ".\\Shader\\shader.frag");
 	
-	
+	// Texture
+	GLuint texture;
+	glGenTextures(1, &texture);
+	glBindTexture(GL_TEXTURE_2D, texture);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	int width = 0, height = 0, nrChannels = 0;
+	stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
+	unsigned char* image = stbi_load(".\\Shader\\main_floor.jpg", &width, &height, &nrChannels, 0);
+	if (image)
+	{
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+		//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
+		glGenerateMipmap(GL_TEXTURE_2D);
+		std::cout << "load texture: OK!" << std::endl;
+	}
+	else
+	{
+		std::cout << "Failed to load texture" << std::endl;
+	}
+	stbi_image_free(image);
+	glBindTexture(GL_TEXTURE_2D, 0);
+
+	// Texture2
+	GLuint texture2;
+	glGenTextures(1, &texture2);
+	glBindTexture(GL_TEXTURE_2D, texture2);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	width = 0; height = 0; nrChannels = 0;
+	stbi_set_flip_vertically_on_load(true);
+	image = stbi_load(".\\Shader\\second_floor.jpg", &width, &height, &nrChannels, 4);
+	if (image)
+	{
+		//glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
+		glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA8, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, image);
+		glGenerateMipmap(GL_TEXTURE_2D);
+		std::cout << "load texture: OK!" << std::endl;
+	}
+	else
+	{
+		std::cout << "Failed to load texture" << std::endl;
+	}
+	stbi_image_free(image);
+	glBindTexture(GL_TEXTURE_2D, texture);
 
 	
 	VertexArray va_f;
@@ -440,9 +488,11 @@ int main(void)
 	//layout_f.Push<float>(3);
 	layout_f.Push<float>(2);
 	va_f.AddBuffer(vb_f, layout_f);
+	glBindTexture(GL_TEXTURE_2D, texture);
 	//IndexBuffer ib_f(indices_floor, 6);
 	//ib_f.Unbind();
-
+	va_f.Unbind();
+	vb_f.Unbind();
 	/*
 	VertexArray va_f;
 	VertexBuffer vb_f(vertices_floor, sizeof(vertices_floor), GL_STATIC_DRAW);
@@ -454,9 +504,9 @@ int main(void)
 	//ib_f.Unbind();
 	*/
 
-	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE); //GL_LINE GL_FILL
-	//glEnable(GL_DEPTH_TEST);
-	//glEnable(GL_CULL_FACE);
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL); //GL_LINE GL_FILL
+	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_CULL_FACE);
 	
 	glEnable(GL_PROGRAM_POINT_SIZE);
 	glPointSize(4);
@@ -513,12 +563,60 @@ int main(void)
 	//ImGui::StyleColorsLight();
 
 	// Our state
-	bool show_demo_window = true;
+	bool show_demo_window = false;
 	bool show_another_window = false;
 	ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 	
 	
 	float x = 0, y = 0, n = 1;
+
+	scene::Scene* currentScene = nullptr;
+	scene::SceneMenu* sceneMenu = new scene::SceneMenu(currentScene);
+	currentScene = sceneMenu;
+	scene::SceneTest sceneTest;
+
+	sceneMenu->RegScene<scene::SceneTest>("Scene Test");
+	sceneMenu->RegScene<scene::SceneCurves>("SceneCurves");
+
+
+
+	
+		Circle circ(10);
+		std::vector<point3D> v1;
+		double step = 10;
+		point3D point;
+		/*for (double t = 0; t < (180); t += step) {
+			point = circ.get_point3D(t);
+			v1.push_back(point.x);
+			v1.push_back(point.y);
+			v1.push_back(point.z);
+		};
+		std::cout << v1[0] << ", " << v1[1] << ", " << v1[2] << std::endl;
+		std::cout << v1[3] << ", " << v1[4] << ", " << v1[5] << std::endl;
+		*/
+		for (double t = 0; t < (360); t += step) {
+			v1.push_back(circ.get_point3D(t));
+	
+		};
+		
+		
+		std::cout << "v1.size() = " << v1.size() << std::endl
+			<< "v1.size() * sizeof(double) = " << v1.size() * sizeof(double) << std::endl
+			<< "sizeof(v1) = " << sizeof(v1) << std::endl
+			<< "sizeof(v1.data()) = " << sizeof(v1.data()) << std::endl;
+
+		VertexArray va_c;
+		VertexBuffer vb_c(v1.data(), v1.size() * 3 * sizeof(double)); //GL_DYNAMIC_DRAW
+		//glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices_floor), vertices_floor);
+		VertexBufferLayout layout_c;
+		layout_c.Push<double>(3); // offsetof(Vertex, Positions);
+		//layout_f.Push<float>(3);
+		//layout_c.Push<float>(2);
+		va_c.AddBuffer(vb_c, layout_c);
+		va_c.Unbind();
+		vb_c.Unbind();
+	
+
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))
@@ -539,10 +637,6 @@ int main(void)
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		
 		// Poll and handle events (inputs, window resize, etc.)
-		// You can read the io.WantCaptureMouse, io.WantCaptureKeyboard flags to tell if dear imgui wants to use your inputs.
-		// - When io.WantCaptureMouse is true, do not dispatch mouse input data to your main application, or clear/overwrite your copy of the mouse data.
-		// - When io.WantCaptureKeyboard is true, do not dispatch keyboard input data to your main application, or clear/overwrite your copy of the keyboard data.
-		// Generally you may always pass all inputs to dear imgui, and hide them from your application based on those two flags.
 		glfwPollEvents();
 		// Start the Dear ImGui frame
 		ImGui_ImplOpenGL3_NewFrame();
@@ -551,8 +645,7 @@ int main(void)
 
 
 		ourShader.Use();
-			
-
+		
 		// retrieve the matrix uniform locations
 		unsigned int modelLoc = glGetUniformLocation(ourShader.Program, "model");
 		unsigned int viewLoc = glGetUniformLocation(ourShader.Program, "view");
@@ -629,6 +722,7 @@ int main(void)
 		memcpy(vertices_floor, q.data(), q.size() * sizeof(Vertex));
 		va_f.Bind();
 		vb_f.Bind();
+		glBindTexture(GL_TEXTURE_2D, texture);
 		glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices_floor), vertices_floor);
 		IndexBuffer ib_f(indices_, 36);
 		//ib_f.Bind();
@@ -640,7 +734,9 @@ int main(void)
 		{
 			// calculate the model matrix for each object and pass it to shader before drawing
 			glm::mat4 model = glm::mat4(1.0f);
-			model = glm::translate(model, glm::vec3(cubePositions[i].x, cubePositions[i].y, cubePositions[i].z));
+			//model = glm::translate(model, glm::vec3(cubePositions[i].x, cubePositions[i].y, cubePositions[i].z));
+			model = glm::translate(model, glm::vec3(v1[i].x, v1[i].y, v1[i].z));
+			
 			//float angle = 2.0f * (20 - i);
 			//model = glm::rotate(model, glm::radians(-90.0f), glm::vec3(1.0f, 0.0f, 0.0f));
 			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -652,13 +748,22 @@ int main(void)
 		//glDrawArrays(GL_TRIANGLES, 0, 36);
 		
 		
+		va_c.Bind();
+		model = glm::mat4(1.0f);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glDrawArrays(GL_POINTS, 0, v1.size() );
+
+
+
 		/*		//model render
 		model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
 		model = glm::scale(model, glm::vec3(0.02f, 0.02f, 0.02f));	// it's a bit too big for our scene, so scale it down
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		ourModel.Draw(ourShader);
 		*/
-
+		// 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
+		if (show_demo_window)
+			ImGui::ShowDemoWindow(&show_demo_window);
 		// 2. Show a simple window that we create ourselves. We use a Begin/End pair to create a named window.
 		{
 			static float f = 0.0f;
@@ -675,14 +780,32 @@ int main(void)
 			//ImGui::SliderInt("Number", )
 			ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats representing a color
 
-			if (ImGui::Button("Button"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
+			if (ImGui::Button("Button +"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
 				n++;
+			if (ImGui::Button("Button -"))
+				n--;
 			ImGui::SameLine();
 			ImGui::Text("counter = %i", n);
 
 			ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / io.Framerate, io.Framerate);
+
+			sceneTest.onImGuiRender();
+
+			
 			ImGui::End();
 		}
+
+		ImGui::Begin("Test");
+		if (currentScene != sceneMenu && ImGui::Button("<-"))
+		{
+			delete currentScene;
+			currentScene = sceneMenu;
+			
+		};
+		currentScene->onImGuiRender();
+		//ImGui::ShowDemoWindow();
+		ImGui::End();
+	
 
 		// Rendering
 		ImGui::Render();
@@ -784,21 +907,26 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
 {
 	float xpos = static_cast<float>(xposIn);
 	float ypos = static_cast<float>(yposIn);
-
-	if (firstMouse)
+	
+	if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
 	{
+		/*float xoffset = xpos - lastX; 
+		float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
+		*/
+		if (LeftPress == GLFW_PRESS)
+		{
+			//float xoffset = xpos - lastX;
+			//float yoffset = lastY - ypos;
+			float xoffset = lastX - xpos;
+			float yoffset = ypos - lastY;
+			camera.ProcessMouseMovement(xoffset, yoffset);
+		}
 		lastX = xpos;
 		lastY = ypos;
-		firstMouse = false;
+
+		
+
 	}
-
-	float xoffset = xpos - lastX;
-	float yoffset = lastY - ypos; // reversed since y-coordinates go from bottom to top
-
-	lastX = xpos;
-	lastY = ypos;
-
-	camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
 // glfw: whenever the mouse scroll wheel scrolls, this callback is called
@@ -808,6 +936,16 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 	camera.ProcessMouseScroll(static_cast<float>(yoffset));
 }
 
+void mouse_button_callback(GLFWwindow* window, int button, int action, int mods)
+{
+	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS)
+	{
+		LeftPress = GLFW_PRESS;
+		glfwGetCursorPos(window, &lastX, &lastY);
+	}
+	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE)
+		LeftPress = GLFW_RELEASE;
+}
 
 
 

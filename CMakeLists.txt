@@ -21,11 +21,11 @@ add_executable(${PROJECT_NAME}
 	src/Mesh.h
 	src/Mesh.cpp
 	src/Model.h
-	external/3D_curves/3D_curves.h
-	external/3D_curves/3D_curves.cpp
+	#external/3D_curves/3D_curves.h
+	#external/3D_curves/3D_curves.cpp
 	#src/Renderer/Shader/backpack/backpack.obj
 
-)
+  "src/Scene/Scene.h" "src/Scene/SceneTest.h" "src/Scene/SceneTest.cpp" "src/Scene/Scene.cpp" "src/Renderer/Renderer.h")
 target_compile_features(${PROJECT_NAME}  PUBLIC cxx_std_17)
 
 
@@ -50,6 +50,8 @@ target_link_libraries(${PROJECT_NAME} assimp)
 add_subdirectory(external/imgui)
 target_link_libraries(${PROJECT_NAME} imgui)
 
+add_subdirectory(external/3D_curves)
+target_link_libraries(${PROJECT_NAME} 3D_curves)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/)
 #set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})

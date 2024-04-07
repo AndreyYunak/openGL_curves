@@ -49,6 +49,13 @@ public:
 		stride += (count) * VertexBufferElement::GetSizeOfType(GL_FLOAT);
 	}
 
+	template <>
+	void Push<double>(unsigned int count)
+	{
+		v_Elements.push_back({ GL_DOUBLE, count, GL_FALSE });
+		stride += (count)*VertexBufferElement::GetSizeOfType(GL_DOUBLE);
+	}
+
 	inline const std::vector<VertexBufferElement> & GetElements() const { return v_Elements; }
 	inline unsigned int GetStride() const { return stride; }
 

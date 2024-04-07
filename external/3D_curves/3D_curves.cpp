@@ -1,4 +1,4 @@
-﻿#include "3D_curves.h"
+﻿#include "3D_curves/3D_curves.h"
 #include <cmath>
 
 double pi_v = 3.1415926535;
