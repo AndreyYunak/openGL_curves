@@ -1,6 +1,25 @@
 # openGL_curves
-A small C++ program that implements 3D curve hierarchy support. With OpenGL
+Учебный проект рендеринга на gpu. Используется для изучения OpenGl API. Плохой код.
 
-To run, you need to execute CMake in the root directory. It also requires support for OpenGL 4.6 by the video card driver. 
+## Технологии
+- [OpenGl API](https://www.opengl.org/Documentation/Specs.html)
+- C++
+- Cmake
 
-Curve Library: https://github.com/AndreyYunak/Curves.git
+## Сборка
+Установить проект:
+```sh
+mkdir opengl
+cd opengl
+
+git clone https://github.com/AndreyYunak/openGL_curves.git
+
+cmake --build out 
+```
+
+### Требования
+Для запуска проекта, необходима поддержка OpenGL 4.6 драйвером видеокарты 
+
+
+## Источники
+..
