@@ -1,4 +1,3 @@
-#if 0
 #pragma once
 
 #include <glm/glm.hpp> // vec2, vec3, mat4, radians
@@ -50,4 +49,3 @@ private:
 
 	void setupMesh();
 };
-#endif

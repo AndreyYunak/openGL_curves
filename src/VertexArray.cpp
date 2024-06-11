@@ -1,14 +1,17 @@
 #include "VertexArray.h"
+#include <iostream>
 
 VertexArray::VertexArray()
 {
 	glGenVertexArrays(1, &va_ID);
+	std::cout << "gen VAO\n";
 	Unbind();
 }
 
 VertexArray::~VertexArray()
 {
 	glDeleteVertexArrays(1, &va_ID);
+	std::cout << "del VAO\n";
 }
 
 void VertexArray::AddBuffer(const VertexBuffer& vb, const VertexBufferLayout& layout)
@@ -33,9 +36,11 @@ void VertexArray::AddBuffer(const VertexBuffer& vb, const VertexBufferLayout& la
 void VertexArray::Bind() const
 {
 	glBindVertexArray(va_ID);
+	std::cout << "bind VAO\n";
 }
 
 void VertexArray::Unbind() const
 {
 	glBindVertexArray(0);
+	std::cout << "unbind VAO\n";
 }

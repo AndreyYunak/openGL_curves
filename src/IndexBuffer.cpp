@@ -8,6 +8,7 @@ IndexBuffer::IndexBuffer(const void* data, unsigned int count_of_index, unsigned
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, bufferID);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, count_of_index * sizeof(unsigned int), data, type);
 	// glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(Indices), Indices, GL_STATIC_DRAW);
+	Unbind();
 }
 
 IndexBuffer::~IndexBuffer()

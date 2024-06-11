@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\CMakeFiles\0d4141c6b8feb6906b8a8f20fe45004d\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\CMakeFiles\0d4141c6b8feb6906b8a8f20fe45004d\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{A2F521CF-0FF8-3300-AE85-FD0C5362E59E}</UniqueIdentifier>
+      <UniqueIdentifier>{C0964C66-42FC-3756-B788-1C772FA48FB8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

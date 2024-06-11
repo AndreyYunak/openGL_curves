@@ -130,4 +130,21 @@ private:
         Up    = glm::normalize(glm::cross(Right, Front));
     }
 };
+
+
+// settings
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
+
+
+// camera
+//Camera camera(glm::vec3(30.0f, 30.0f, 30.0f));
+extern Camera camera;
+
+Camera* getCamera() {
+    return &camera;
+}
+
+
+
 #endif

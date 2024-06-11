@@ -24,7 +24,7 @@ events:
       The output was:
       0
       Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-      Сборка начата 31.03.2024 10:21:05.
+      Сборка начата 11.05.2024 9:18:39.
       
       Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\3.27.0-rc2\\CompilerIdC\\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
@@ -53,7 +53,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:02.22
+      Прошло времени 00:00:16.54
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -79,7 +79,7 @@ events:
       The output was:
       0
       Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-      Сборка начата 31.03.2024 10:21:08.
+      Сборка начата 11.05.2024 9:18:58.
       
       Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\3.27.0-rc2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
       PrepareForBuild:
@@ -108,7 +108,7 @@ events:
           Предупреждений: 0
           Ошибок: 0
       
-      Прошло времени 00:00:01.84
+      Прошло времени 00:00:06.63
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -127,8 +127,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-j4ybio"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-j4ybio"
+      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1t0muv"
+      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1t0muv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -136,40 +136,40 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-j4ybio'
+        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1t0muv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ecbbe.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_232ba.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:11.
+        Сборка начата 11.05.2024 9:19:08.
         
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-j4ybio\\cmTC_ecbbe.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1t0muv\\cmTC_232ba.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_ecbbe.dir\\Debug\\".
+          Создание каталога "cmTC_232ba.dir\\Debug\\".
           Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-j4ybio\\Debug\\".
-          Создание каталога "cmTC_ecbbe.dir\\Debug\\cmTC_ecbbe.tlog\\".
+          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1t0muv\\Debug\\".
+          Создание каталога "cmTC_232ba.dir\\Debug\\cmTC_232ba.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_ecbbe.dir\\Debug\\cmTC_ecbbe.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_ecbbe.dir\\Debug\\cmTC_ecbbe.tlog\\unsuccessfulbuild".
+          Создание "cmTC_232ba.dir\\Debug\\cmTC_232ba.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_232ba.dir\\Debug\\cmTC_232ba.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ecbbe.dir\\Debug\\\\" /Fd"cmTC_ecbbe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_232ba.dir\\Debug\\\\" /Fd"cmTC_232ba.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ecbbe.dir\\Debug\\\\" /Fd"cmTC_ecbbe.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_232ba.dir\\Debug\\\\" /Fd"cmTC_232ba.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCCompilerABI.c"
           CMakeCCompilerABI.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-j4ybio\\Debug\\cmTC_ecbbe.exe" /INCREMENTAL /ILK:"cmTC_ecbbe.dir\\Debug\\cmTC_ecbbe.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-j4ybio/Debug/cmTC_ecbbe.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-j4ybio/Debug/cmTC_ecbbe.lib" /MACHINE:X64  /machine:x64 cmTC_ecbbe.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_ecbbe.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-j4ybio\\Debug\\cmTC_ecbbe.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1t0muv\\Debug\\cmTC_232ba.exe" /INCREMENTAL /ILK:"cmTC_232ba.dir\\Debug\\cmTC_232ba.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1t0muv/Debug/cmTC_232ba.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1t0muv/Debug/cmTC_232ba.lib" /MACHINE:X64  /machine:x64 cmTC_232ba.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_232ba.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1t0muv\\Debug\\cmTC_232ba.exe
         FinalizeBuildStatus:
-          Файл "cmTC_ecbbe.dir\\Debug\\cmTC_ecbbe.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_ecbbe.dir\\Debug\\cmTC_ecbbe.tlog\\cmTC_ecbbe.lastbuildstate".
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-j4ybio\\cmTC_ecbbe.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_232ba.dir\\Debug\\cmTC_232ba.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_232ba.dir\\Debug\\cmTC_232ba.tlog\\cmTC_232ba.lastbuildstate".
+        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1t0muv\\cmTC_232ba.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:01.73
+        Прошло времени 00:00:06.41
         
       exitCode: 0
   -
@@ -181,8 +181,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-v1787n"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-v1787n"
+      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-am9kue"
+      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-am9kue"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
@@ -190,40 +190,40 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-v1787n'
+        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-am9kue'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_52aa5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_4e348.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:13.
+        Сборка начата 11.05.2024 9:19:17.
         
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-v1787n\\cmTC_52aa5.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-am9kue\\cmTC_4e348.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_52aa5.dir\\Debug\\".
+          Создание каталога "cmTC_4e348.dir\\Debug\\".
           Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-v1787n\\Debug\\".
-          Создание каталога "cmTC_52aa5.dir\\Debug\\cmTC_52aa5.tlog\\".
+          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-am9kue\\Debug\\".
+          Создание каталога "cmTC_4e348.dir\\Debug\\cmTC_4e348.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_52aa5.dir\\Debug\\cmTC_52aa5.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_52aa5.dir\\Debug\\cmTC_52aa5.tlog\\unsuccessfulbuild".
+          Создание "cmTC_4e348.dir\\Debug\\cmTC_4e348.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_4e348.dir\\Debug\\cmTC_4e348.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_52aa5.dir\\Debug\\\\" /Fd"cmTC_52aa5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4e348.dir\\Debug\\\\" /Fd"cmTC_4e348.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_52aa5.dir\\Debug\\\\" /Fd"cmTC_52aa5.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_4e348.dir\\Debug\\\\" /Fd"cmTC_4e348.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.27\\Modules\\CMakeCXXCompilerABI.cpp"
           CMakeCXXCompilerABI.cpp
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-v1787n\\Debug\\cmTC_52aa5.exe" /INCREMENTAL /ILK:"cmTC_52aa5.dir\\Debug\\cmTC_52aa5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-v1787n/Debug/cmTC_52aa5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-v1787n/Debug/cmTC_52aa5.lib" /MACHINE:X64  /machine:x64 cmTC_52aa5.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_52aa5.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-v1787n\\Debug\\cmTC_52aa5.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-am9kue\\Debug\\cmTC_4e348.exe" /INCREMENTAL /ILK:"cmTC_4e348.dir\\Debug\\cmTC_4e348.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-am9kue/Debug/cmTC_4e348.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-am9kue/Debug/cmTC_4e348.lib" /MACHINE:X64  /machine:x64 cmTC_4e348.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_4e348.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-am9kue\\Debug\\cmTC_4e348.exe
         FinalizeBuildStatus:
-          Файл "cmTC_52aa5.dir\\Debug\\cmTC_52aa5.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_52aa5.dir\\Debug\\cmTC_52aa5.tlog\\cmTC_52aa5.lastbuildstate".
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-v1787n\\cmTC_52aa5.vcxproj" завершена (целевые объекты по умолчанию).
+          Файл "cmTC_4e348.dir\\Debug\\cmTC_4e348.tlog\\unsuccessfulbuild" удаляется.
+          Обращение к "cmTC_4e348.dir\\Debug\\cmTC_4e348.tlog\\cmTC_4e348.lastbuildstate".
+        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-am9kue\\cmTC_4e348.vcxproj" завершена (целевые объекты по умолчанию).
         
         Сборка успешно завершена.
             Предупреждений: 0
             Ошибок: 0
         
-        Прошло времени 00:00:02.36
+        Прошло времени 00:00:03.92
         
       exitCode: 0
   -
@@ -237,8 +237,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-zhg3wc"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-zhg3wc"
+      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-4xiftd"
+      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-4xiftd"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -248,40 +248,40 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-zhg3wc'
+        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-4xiftd'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_8dfc4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_7c0f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:17.
+        Сборка начата 11.05.2024 9:19:22.
         
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\cmTC_8dfc4.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\cmTC_7c0f6.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_8dfc4.dir\\Debug\\".
+          Создание каталога "cmTC_7c0f6.dir\\Debug\\".
           Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\Debug\\".
-          Создание каталога "cmTC_8dfc4.dir\\Debug\\cmTC_8dfc4.tlog\\".
+          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\Debug\\".
+          Создание каталога "cmTC_7c0f6.dir\\Debug\\cmTC_7c0f6.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_8dfc4.dir\\Debug\\cmTC_8dfc4.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_8dfc4.dir\\Debug\\cmTC_8dfc4.tlog\\unsuccessfulbuild".
+          Создание "cmTC_7c0f6.dir\\Debug\\cmTC_7c0f6.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_7c0f6.dir\\Debug\\cmTC_7c0f6.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8dfc4.dir\\Debug\\\\" /Fd"cmTC_8dfc4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\src.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c0f6.dir\\Debug\\\\" /Fd"cmTC_7c0f6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\src.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8dfc4.dir\\Debug\\\\" /Fd"cmTC_8dfc4.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\src.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7c0f6.dir\\Debug\\\\" /Fd"cmTC_7c0f6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\src.c"
           src.c
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\src.c(1,10): error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\cmTC_8dfc4.vcxproj]
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\cmTC_8dfc4.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\src.c(1,10): error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\cmTC_7c0f6.vcxproj]
+        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\cmTC_7c0f6.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
         
         Ошибка сборки.
         
-        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\cmTC_8dfc4.vcxproj" (целевой объект по умолчанию) (1) ->
+        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\cmTC_7c0f6.vcxproj" (целевой объект по умолчанию) (1) ->
         (Целевой объект ClCompile) -> 
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\src.c(1,10): error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-zhg3wc\\cmTC_8dfc4.vcxproj]
+          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\src.c(1,10): error C1083: Не удается открыть файл включение: pthread.h: No such file or directory, [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-4xiftd\\cmTC_7c0f6.vcxproj]
         
             Предупреждений: 0
             Ошибок: 1
         
-        Прошло времени 00:00:01.80
+        Прошло времени 00:00:02.43
         
       exitCode: 1
   -
@@ -294,8 +294,8 @@ events:
     checks:
       - "Looking for pthread_create in pthreads"
     directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-q6vjes"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-q6vjes"
+      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-dv4gzv"
+      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-dv4gzv"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -305,42 +305,42 @@ events:
       variable: "CMAKE_HAVE_PTHREADS_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-q6vjes'
+        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-dv4gzv'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_5b3a7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e3de0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:19.
+        Сборка начата 11.05.2024 9:19:26.
         
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\cmTC_5b3a7.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\cmTC_e3de0.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_5b3a7.dir\\Debug\\".
+          Создание каталога "cmTC_e3de0.dir\\Debug\\".
           Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\Debug\\".
-          Создание каталога "cmTC_5b3a7.dir\\Debug\\cmTC_5b3a7.tlog\\".
+          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\Debug\\".
+          Создание каталога "cmTC_e3de0.dir\\Debug\\cmTC_e3de0.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_5b3a7.dir\\Debug\\cmTC_5b3a7.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_5b3a7.dir\\Debug\\cmTC_5b3a7.tlog\\unsuccessfulbuild".
+          Создание "cmTC_e3de0.dir\\Debug\\cmTC_e3de0.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_e3de0.dir\\Debug\\cmTC_e3de0.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5b3a7.dir\\Debug\\\\" /Fd"cmTC_5b3a7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e3de0.dir\\Debug\\\\" /Fd"cmTC_e3de0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\CheckFunctionExists.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5b3a7.dir\\Debug\\\\" /Fd"cmTC_5b3a7.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e3de0.dir\\Debug\\\\" /Fd"cmTC_e3de0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\Debug\\cmTC_5b3a7.exe" /INCREMENTAL /ILK:"cmTC_5b3a7.dir\\Debug\\cmTC_5b3a7.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-q6vjes/Debug/cmTC_5b3a7.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-q6vjes/Debug/cmTC_5b3a7.lib" /MACHINE:X64  /machine:x64 cmTC_5b3a7.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\cmTC_5b3a7.vcxproj]
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\cmTC_5b3a7.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\Debug\\cmTC_e3de0.exe" /INCREMENTAL /ILK:"cmTC_e3de0.dir\\Debug\\cmTC_e3de0.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-dv4gzv/Debug/cmTC_e3de0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-dv4gzv/Debug/cmTC_e3de0.lib" /MACHINE:X64  /machine:x64 cmTC_e3de0.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\cmTC_e3de0.vcxproj]
+        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\cmTC_e3de0.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
         
         Ошибка сборки.
         
-        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\cmTC_5b3a7.vcxproj" (целевой объект по умолчанию) (1) ->
+        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\cmTC_e3de0.vcxproj" (целевой объект по умолчанию) (1) ->
         (Целевой объект Link) -> 
-          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-q6vjes\\cmTC_5b3a7.vcxproj]
+          LINK : fatal error LNK1104: не удается открыть файл "pthreads.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-dv4gzv\\cmTC_e3de0.vcxproj]
         
             Предупреждений: 0
             Ошибок: 1
         
-        Прошло времени 00:00:02.35
+        Прошло времени 00:00:01.98
         
       exitCode: 1
   -
@@ -353,8 +353,8 @@ events:
     checks:
       - "Looking for pthread_create in pthread"
     directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-2ebma9"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-2ebma9"
+      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-yba5ph"
+      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-yba5ph"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -364,385 +364,41 @@ events:
       variable: "CMAKE_HAVE_PTHREAD_CREATE"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-2ebma9'
+        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-yba5ph'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a5f77.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_9fdbd.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:22.
+        Сборка начата 11.05.2024 9:19:29.
         
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\cmTC_a5f77.vcxproj" в узле 1 (целевые объекты по умолчанию).
+        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\cmTC_9fdbd.vcxproj" в узле 1 (целевые объекты по умолчанию).
         PrepareForBuild:
-          Создание каталога "cmTC_a5f77.dir\\Debug\\".
+          Создание каталога "cmTC_9fdbd.dir\\Debug\\".
           Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\Debug\\".
-          Создание каталога "cmTC_a5f77.dir\\Debug\\cmTC_a5f77.tlog\\".
+          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\Debug\\".
+          Создание каталога "cmTC_9fdbd.dir\\Debug\\cmTC_9fdbd.tlog\\".
         InitializeBuildStatus:
-          Создание "cmTC_a5f77.dir\\Debug\\cmTC_a5f77.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_a5f77.dir\\Debug\\cmTC_a5f77.tlog\\unsuccessfulbuild".
+          Создание "cmTC_9fdbd.dir\\Debug\\cmTC_9fdbd.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
+          Обращение к "cmTC_9fdbd.dir\\Debug\\cmTC_9fdbd.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5f77.dir\\Debug\\\\" /Fd"cmTC_a5f77.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\CheckFunctionExists.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9fdbd.dir\\Debug\\\\" /Fd"cmTC_9fdbd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\CheckFunctionExists.c"
           Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
           (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a5f77.dir\\Debug\\\\" /Fd"cmTC_a5f77.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\CheckFunctionExists.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_9fdbd.dir\\Debug\\\\" /Fd"cmTC_9fdbd.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\CheckFunctionExists.c"
           CheckFunctionExists.c
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\Debug\\cmTC_a5f77.exe" /INCREMENTAL /ILK:"cmTC_a5f77.dir\\Debug\\cmTC_a5f77.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-2ebma9/Debug/cmTC_a5f77.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-2ebma9/Debug/cmTC_a5f77.lib" /MACHINE:X64  /machine:x64 cmTC_a5f77.dir\\Debug\\CheckFunctionExists.obj
-        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\cmTC_a5f77.vcxproj]
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\cmTC_a5f77.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\Debug\\cmTC_9fdbd.exe" /INCREMENTAL /ILK:"cmTC_9fdbd.dir\\Debug\\cmTC_9fdbd.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-yba5ph/Debug/cmTC_9fdbd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-yba5ph/Debug/cmTC_9fdbd.lib" /MACHINE:X64  /machine:x64 cmTC_9fdbd.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\cmTC_9fdbd.vcxproj]
+        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\cmTC_9fdbd.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
         
         Ошибка сборки.
         
-        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\cmTC_a5f77.vcxproj" (целевой объект по умолчанию) (1) ->
+        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\cmTC_9fdbd.vcxproj" (целевой объект по умолчанию) (1) ->
         (Целевой объект Link) -> 
-          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-2ebma9\\cmTC_a5f77.vcxproj]
+          LINK : fatal error LNK1104: не удается открыть файл "pthread.lib" [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-yba5ph\\cmTC_9fdbd.vcxproj]
         
             Предупреждений: 0
             Ошибок: 1
         
-        Прошло времени 00:00:02.48
+        Прошло времени 00:00:02.40
         
       exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "external/assimp/contrib/zlib/CMakeLists.txt:35 (check_include_file)"
-    checks:
-      - "Looking for sys/types.h"
-    directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-jld35n"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-jld35n"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/cmake-modules"
-    buildResult:
-      variable: "HAVE_SYS_TYPES_H"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-jld35n'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_3d02b.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:26.
-        
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\cmTC_3d02b.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Создание каталога "cmTC_3d02b.dir\\Debug\\".
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\Debug\\".
-          Создание каталога "cmTC_3d02b.dir\\Debug\\cmTC_3d02b.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_3d02b.dir\\Debug\\cmTC_3d02b.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_3d02b.dir\\Debug\\cmTC_3d02b.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d02b.dir\\Debug\\\\" /Fd"cmTC_3d02b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\CheckIncludeFile.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3d02b.dir\\Debug\\\\" /Fd"cmTC_3d02b.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\CheckIncludeFile.c"
-          CheckIncludeFile.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\Debug\\cmTC_3d02b.exe" /INCREMENTAL /ILK:"cmTC_3d02b.dir\\Debug\\cmTC_3d02b.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-jld35n/Debug/cmTC_3d02b.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-jld35n/Debug/cmTC_3d02b.lib" /MACHINE:X64  /machine:x64 cmTC_3d02b.dir\\Debug\\CheckIncludeFile.obj
-          cmTC_3d02b.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\Debug\\cmTC_3d02b.exe
-        FinalizeBuildStatus:
-          Файл "cmTC_3d02b.dir\\Debug\\cmTC_3d02b.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_3d02b.dir\\Debug\\cmTC_3d02b.tlog\\cmTC_3d02b.lastbuildstate".
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-jld35n\\cmTC_3d02b.vcxproj" завершена (целевые объекты по умолчанию).
-        
-        Сборка успешно завершена.
-            Предупреждений: 0
-            Ошибок: 0
-        
-        Прошло времени 00:00:02.89
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "external/assimp/contrib/zlib/CMakeLists.txt:36 (check_include_file)"
-    checks:
-      - "Looking for stdint.h"
-    directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-s7g8a9"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-s7g8a9"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/cmake-modules"
-    buildResult:
-      variable: "HAVE_STDINT_H"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-s7g8a9'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d653f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:29.
-        
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\cmTC_d653f.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Создание каталога "cmTC_d653f.dir\\Debug\\".
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\Debug\\".
-          Создание каталога "cmTC_d653f.dir\\Debug\\cmTC_d653f.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_d653f.dir\\Debug\\cmTC_d653f.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_d653f.dir\\Debug\\cmTC_d653f.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d653f.dir\\Debug\\\\" /Fd"cmTC_d653f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\CheckIncludeFile.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d653f.dir\\Debug\\\\" /Fd"cmTC_d653f.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\CheckIncludeFile.c"
-          CheckIncludeFile.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\Debug\\cmTC_d653f.exe" /INCREMENTAL /ILK:"cmTC_d653f.dir\\Debug\\cmTC_d653f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-s7g8a9/Debug/cmTC_d653f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-s7g8a9/Debug/cmTC_d653f.lib" /MACHINE:X64  /machine:x64 cmTC_d653f.dir\\Debug\\CheckIncludeFile.obj
-          cmTC_d653f.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\Debug\\cmTC_d653f.exe
-        FinalizeBuildStatus:
-          Файл "cmTC_d653f.dir\\Debug\\cmTC_d653f.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_d653f.dir\\Debug\\cmTC_d653f.tlog\\cmTC_d653f.lastbuildstate".
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-s7g8a9\\cmTC_d653f.vcxproj" завершена (целевые объекты по умолчанию).
-        
-        Сборка успешно завершена.
-            Предупреждений: 0
-            Ошибок: 0
-        
-        Прошло времени 00:00:02.37
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "external/assimp/contrib/zlib/CMakeLists.txt:37 (check_include_file)"
-    checks:
-      - "Looking for stddef.h"
-    directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-pey95e"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-pey95e"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/cmake-modules"
-    buildResult:
-      variable: "HAVE_STDDEF_H"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-pey95e'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_97b5d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:32.
-        
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\cmTC_97b5d.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Создание каталога "cmTC_97b5d.dir\\Debug\\".
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\Debug\\".
-          Создание каталога "cmTC_97b5d.dir\\Debug\\cmTC_97b5d.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_97b5d.dir\\Debug\\cmTC_97b5d.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_97b5d.dir\\Debug\\cmTC_97b5d.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97b5d.dir\\Debug\\\\" /Fd"cmTC_97b5d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\CheckIncludeFile.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97b5d.dir\\Debug\\\\" /Fd"cmTC_97b5d.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\CheckIncludeFile.c"
-          CheckIncludeFile.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\Debug\\cmTC_97b5d.exe" /INCREMENTAL /ILK:"cmTC_97b5d.dir\\Debug\\cmTC_97b5d.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-pey95e/Debug/cmTC_97b5d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-pey95e/Debug/cmTC_97b5d.lib" /MACHINE:X64  /machine:x64 cmTC_97b5d.dir\\Debug\\CheckIncludeFile.obj
-          cmTC_97b5d.vcxproj -> C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\Debug\\cmTC_97b5d.exe
-        FinalizeBuildStatus:
-          Файл "cmTC_97b5d.dir\\Debug\\cmTC_97b5d.tlog\\unsuccessfulbuild" удаляется.
-          Обращение к "cmTC_97b5d.dir\\Debug\\cmTC_97b5d.tlog\\cmTC_97b5d.lastbuildstate".
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-pey95e\\cmTC_97b5d.vcxproj" завершена (целевые объекты по умолчанию).
-        
-        Сборка успешно завершена.
-            Предупреждений: 0
-            Ошибок: 0
-        
-        Прошло времени 00:00:02.59
-        
-      exitCode: 0
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckTypeSize.cmake:146 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckTypeSize.cmake:271 (__check_type_size_impl)"
-      - "external/assimp/contrib/zlib/CMakeLists.txt:55 (check_type_size)"
-    checks:
-      - "Check size of off64_t"
-    directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1qg6ce"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1qg6ce"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/cmake-modules"
-    buildResult:
-      variable: "HAVE_OFF64_T"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-1qg6ce'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_e777e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:35.
-        
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Создание каталога "cmTC_e777e.dir\\Debug\\".
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\Debug\\".
-          Создание каталога "cmTC_e777e.dir\\Debug\\cmTC_e777e.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_e777e.dir\\Debug\\cmTC_e777e.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_e777e.dir\\Debug\\cmTC_e777e.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e777e.dir\\Debug\\\\" /Fd"cmTC_e777e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_e777e.dir\\Debug\\\\" /Fd"cmTC_e777e.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c"
-          OFF64_T.c
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(29,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(30,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(31,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(32,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(33,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
-        
-        Ошибка сборки.
-        
-        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj" (целевой объект по умолчанию) (1) ->
-        (Целевой объект ClCompile) -> 
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(29,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(30,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(31,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(32,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\OFF64_T.c(33,12): error C2065: off64_t: необъявленный идентификатор [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-1qg6ce\\cmTC_e777e.vcxproj]
-        
-            Предупреждений: 0
-            Ошибок: 5
-        
-        Прошло времени 00:00:01.84
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckFunctionExists.cmake:86 (try_compile)"
-      - "external/assimp/contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
-    checks:
-      - "Looking for fseeko"
-    directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-6hngnb"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-6hngnb"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/cmake-modules"
-    buildResult:
-      variable: "HAVE_FSEEKO"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-6hngnb'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_23bed.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:38.
-        
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Создание каталога "cmTC_23bed.dir\\Debug\\".
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\Debug\\".
-          Создание каталога "cmTC_23bed.dir\\Debug\\cmTC_23bed.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_23bed.dir\\Debug\\cmTC_23bed.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_23bed.dir\\Debug\\cmTC_23bed.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_23bed.dir\\Debug\\\\" /Fd"cmTC_23bed.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\CheckFunctionExists.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_23bed.dir\\Debug\\\\" /Fd"cmTC_23bed.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\CheckFunctionExists.c"
-          CheckFunctionExists.c
-        Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\Debug\\cmTC_23bed.exe" /INCREMENTAL /ILK:"cmTC_23bed.dir\\Debug\\cmTC_23bed.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-6hngnb/Debug/cmTC_23bed.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-6hngnb/Debug/cmTC_23bed.lib" /MACHINE:X64  /machine:x64 cmTC_23bed.dir\\Debug\\CheckFunctionExists.obj
-        CheckFunctionExists.obj : error LNK2019: ссылка на неразрешенный внешний символ fseeko в функции main. [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj]
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\Debug\\cmTC_23bed.exe : fatal error LNK1120: неразрешенных внешних элементов: 1 [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj]
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
-        
-        Ошибка сборки.
-        
-        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj" (целевой объект по умолчанию) (1) ->
-        (Целевой объект Link) -> 
-          CheckFunctionExists.obj : error LNK2019: ссылка на неразрешенный внешний символ fseeko в функции main. [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj]
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\Debug\\cmTC_23bed.exe : fatal error LNK1120: неразрешенных внешних элементов: 1 [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-6hngnb\\cmTC_23bed.vcxproj]
-        
-            Предупреждений: 0
-            Ошибок: 2
-        
-        Прошло времени 00:00:02.36
-        
-      exitCode: 1
-  -
-    kind: "try_compile-v1"
-    backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.27/Modules/CheckIncludeFile.cmake:90 (try_compile)"
-      - "external/assimp/contrib/zlib/CMakeLists.txt:72 (check_include_file)"
-    checks:
-      - "Looking for unistd.h"
-    directories:
-      source: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-arf8c1"
-      binary: "C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-arf8c1"
-    cmakeVariables:
-      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
-      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
-      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
-      CMAKE_MODULE_PATH: "C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/cmake-modules"
-    buildResult:
-      variable: "Z_HAVE_UNISTD_H"
-      cached: true
-      stdout: |
-        Change Dir: 'C:/Users/Andrey/source/repos/Curves/openGL_curves/CMakeFiles/CMakeScratch/TryCompile-arf8c1'
-        
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1ad65.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
-        Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
-        Сборка начата 31.03.2024 10:21:41.
-        
-        Проект "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\cmTC_1ad65.vcxproj" в узле 1 (целевые объекты по умолчанию).
-        PrepareForBuild:
-          Создание каталога "cmTC_1ad65.dir\\Debug\\".
-          Структурированный вывод включен. Форматирование диагностики компилятора будет отражать иерархию ошибок. Подробнее см. https://aka.ms/cpp/structured-output.
-          Создание каталога "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\Debug\\".
-          Создание каталога "cmTC_1ad65.dir\\Debug\\cmTC_1ad65.tlog\\".
-        InitializeBuildStatus:
-          Создание "cmTC_1ad65.dir\\Debug\\cmTC_1ad65.tlog\\unsuccessfulbuild", так как было задано "AlwaysCreate".
-          Обращение к "cmTC_1ad65.dir\\Debug\\cmTC_1ad65.tlog\\unsuccessfulbuild".
-        ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ad65.dir\\Debug\\\\" /Fd"cmTC_1ad65.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\CheckIncludeFile.c"
-          Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.38.33130 для x64
-          (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_1ad65.dir\\Debug\\\\" /Fd"cmTC_1ad65.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\CheckIncludeFile.c"
-          CheckIncludeFile.c
-        C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\CheckIncludeFile.c(1,10): error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\cmTC_1ad65.vcxproj]
-        Сборка проекта "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\cmTC_1ad65.vcxproj" завершена (целевые объекты по умолчанию) с ошибкой.
-        
-        Ошибка сборки.
-        
-        "C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\cmTC_1ad65.vcxproj" (целевой объект по умолчанию) (1) ->
-        (Целевой объект ClCompile) -> 
-          C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\CheckIncludeFile.c(1,10): error C1083: Не удается открыть файл включение: unistd.h: No such file or directory, [C:\\Users\\Andrey\\source\\repos\\Curves\\openGL_curves\\CMakeFiles\\CMakeScratch\\TryCompile-arf8c1\\cmTC_1ad65.vcxproj]
-        
-            Предупреждений: 0
-            Ошибок: 1
-        
-        Прошло времени 00:00:01.83
-        
-      exitCode: 1
-...

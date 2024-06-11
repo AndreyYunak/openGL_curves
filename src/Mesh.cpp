@@ -1,4 +1,3 @@
-#if 0
 #include "Mesh.h"
 
 Mesh::Mesh(std::vector<Vertex> vertices, std::vector<unsigned int> indices, std::vector<Texture> textures)
@@ -77,7 +76,7 @@ void Mesh::Draw(Shader& shader)
             number = std::to_string(heightNr++); // transfer unsigned int to string
 
         // now set the sampler to the correct texture unit
-        glUniform1i(glGetUniformLocation(shader.Program, (name + number).c_str()), i);
+        glUniform1i(glGetUniformLocation(shader.ID, (name + number).c_str()), i);
         // and finally bind the texture
         glBindTexture(GL_TEXTURE_2D, textures[i].id);
     }
@@ -91,4 +90,3 @@ void Mesh::Draw(Shader& shader)
     glActiveTexture(GL_TEXTURE0);
 }
 
-#endif

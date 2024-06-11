@@ -283,6 +283,9 @@
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\ImportExport\Terragen\utTerragenImportExport.cpp">
       <Filter>UnitTests\ImportExport</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\ImportExport\Pbrt\utPbrtImportExport.cpp">
+      <Filter>UnitTests\ImportExport</Filter>
+    </ClCompile>
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\utMaterialSystem.cpp">
       <Filter>UnitTests\Material</Filter>
     </ClCompile>
@@ -396,31 +399,31 @@
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{69A946C6-D1E4-3224-9718-B13836BC9670}</UniqueIdentifier>
+      <UniqueIdentifier>{C366AF3A-308F-30C1-8BE0-348A16C7A6BC}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests">
-      <UniqueIdentifier>{B17C63AB-DA6B-35EF-B17F-4DA12A7CA95C}</UniqueIdentifier>
+      <UniqueIdentifier>{4D8CCC8B-F81A-394C-B04D-382B7388D9FB}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\Common">
-      <UniqueIdentifier>{6484AE23-C6F0-3E54-9DBD-F9683804BEA2}</UniqueIdentifier>
+      <UniqueIdentifier>{2C788D2B-389A-3A0F-9186-6289962381A9}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\Compiler">
-      <UniqueIdentifier>{BBDEAC73-A777-35CE-B1E5-27A5B63A2846}</UniqueIdentifier>
+      <UniqueIdentifier>{74A7549F-BCA3-3C10-922F-6D23DC0691D7}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\GeometryTools">
-      <UniqueIdentifier>{960C4D04-02DE-36C5-9C49-4182CFA12FFE}</UniqueIdentifier>
+      <UniqueIdentifier>{442203A3-FCC0-3F90-AB2E-9A61984898DC}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\ImportExport">
-      <UniqueIdentifier>{C202F398-25D8-334E-A8B9-6F94F3E2CFCD}</UniqueIdentifier>
+      <UniqueIdentifier>{3ECF3864-4E27-366D-ACE2-F73AC617FCD5}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\Material">
-      <UniqueIdentifier>{A5886061-5AD8-3DE2-8AC6-6E612B3F0FB3}</UniqueIdentifier>
+      <UniqueIdentifier>{13D9C97C-3F98-3D4E-A271-76B366FEA1B2}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\Math">
-      <UniqueIdentifier>{77B78CA3-7F0F-35F1-90D7-5590A290E6AA}</UniqueIdentifier>
+      <UniqueIdentifier>{3FB172AE-959C-3B28-9874-3CD8D965BD3B}</UniqueIdentifier>
     </Filter>
     <Filter Include="UnitTests\PostProcess">
-      <UniqueIdentifier>{DE650C1C-4E7D-3F99-B6F0-2F2D1112965E}</UniqueIdentifier>
+      <UniqueIdentifier>{883C3EB4-583D-3488-882F-FA520BB99B88}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

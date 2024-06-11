@@ -14,6 +14,7 @@ struct VertexBufferElement
 		switch (type)
 		{
 			case GL_FLOAT:			return sizeof(GLfloat);
+			case GL_DOUBLE:			return sizeof(GLdouble);
 			case GL_UNSIGNED_INT:	return sizeof(GLuint);
 			case GL_UNSIGNED_BYTE:	return sizeof(GLbyte);
 		}
@@ -28,11 +29,10 @@ class VertexBufferLayout
 private:
 	std::vector<VertexBufferElement> v_Elements;
 	unsigned int stride;
-	unsigned int stride2;
 
 public:
 	VertexBufferLayout()
-		: stride(0), stride2(0) {};
+		: stride(0) {};
 
 	template <typename T>
 	void Push(unsigned int count)

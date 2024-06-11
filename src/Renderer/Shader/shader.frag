@@ -1,4 +1,4 @@
-#version 400
+#version 460
 
 out vec4 frag_color;
 
@@ -17,5 +17,5 @@ uniform sampler2D texture_specular2;
 void main() 
 {
 	
-	frag_color = texture(mytexture, TexCoords);
+	frag_color = texture(texture_diffuse1, TexCoords);
 };

@@ -2,6 +2,16 @@ cmake_minimum_required(VERSION 3.6 FATAL_ERROR)
 set(PROJECT_NAME openGL_curves)
 project(${PROJECT_NAME})
 
+set(shader 
+	src/Renderer/Shader/shader.vs
+	src/Renderer/Shader/shader.frag
+	src/Renderer/Shader/shader1.frag
+	src/Renderer/Shader/shader1.vs
+	src/Renderer/Shader/shader_texture.frag
+	src/Renderer/Shader/shader_texture.vs
+	)
+
+set_source_files_properties(${shader} PROPERTIES HEADER_FILE_ONLY TRUE)
 
 add_executable(${PROJECT_NAME} 
 	src/main.cpp
@@ -14,20 +24,29 @@ add_executable(${PROJECT_NAME}
 	src/VertexBufferLayout.h
 	src/Renderer/ShaderProgram.cpp
 	src/Renderer/ShaderProgram.h
-	src/Renderer/Shader/shader.vs
-	src/Renderer/Shader/shader.frag
+	${shader}
 	src/Renderer/stb_image.h
 	src/camera.h
 	src/Mesh.h
 	src/Mesh.cpp
 	src/Model.h
+	src/Model.cpp
 	#external/3D_curves/3D_curves.h
 	#external/3D_curves/3D_curves.cpp
 	#src/Renderer/Shader/backpack/backpack.obj
 
-  "src/Scene/Scene.h" "src/Scene/SceneTest.h" "src/Scene/SceneTest.cpp" "src/Scene/Scene.cpp" "src/Renderer/Renderer.h")
+  "src/Scene/Scene.h" 
+  "src/Scene/SceneTest.h" 
+  "src/Scene/SceneTest.cpp" 
+  "src/Scene/Scene.cpp" 
+  "src/Renderer/Renderer.h" 
+  "src/Texture.h" 
+  "src/Texture.cpp"
+	src/Scene/SceneTexture.cpp
+	src/Scene/SceneTexture.h)
 target_compile_features(${PROJECT_NAME}  PUBLIC cxx_std_17)
 
+#add_library(stb_image.h STATIC src/Renderer/stb_image.h)
 
 
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
@@ -54,9 +73,11 @@ add_subdirectory(external/3D_curves)
 target_link_libraries(${PROJECT_NAME} 3D_curves)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/)
-#set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT main)
 
-add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD 
-						COMMAND ${CMAKE_COMMAND} -E copy_directory
-						${CMAKE_SOURCE_DIR}/src/Renderer/Shader $<TARGET_FILE_DIR:${PROJECT_NAME}>/Shader)
+add_custom_command(
+	TARGET ${PROJECT_NAME} POST_BUILD 
+	COMMAND ${CMAKE_COMMAND} -E copy_directory_if_different
+			${CMAKE_SOURCE_DIR}/src/Renderer/Shader 
+			$<TARGET_FILE_DIR:${PROJECT_NAME}>/Shader)
 

@@ -1,3 +1,30 @@
 build
 out
 .vs
+
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.out*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files*.module*.smod
+
+# Compiled Static libraries*.lai
+*.lai*.a
+*.libraries
+# Executables
+*.exe
+*.out*.app

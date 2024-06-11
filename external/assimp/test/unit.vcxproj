@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8BDD366F-C708-3AE6-9903-E6B53D452E42}</ProjectGuid>
+    <ProjectGuid>{E104DC66-40BE-37B4-8B28-6810229A6473}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -99,7 +99,6 @@
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
@@ -145,7 +144,6 @@
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
@@ -193,7 +191,6 @@
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
@@ -242,7 +239,6 @@
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <TreatWarningAsError>true</TreatWarningAsError>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
@@ -280,7 +276,7 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -293,7 +289,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -306,7 +302,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -319,7 +315,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/test/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -434,6 +430,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\ImportExport\MDL\utMDLImporter_HL1_Nodes.cpp" />
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\ImportExport\RAW\utRAWImportExport.cpp" />
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\ImportExport\Terragen\utTerragenImportExport.cpp" />
+    <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\ImportExport\Pbrt\utPbrtImportExport.cpp" />
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\utMaterialSystem.cpp" />
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\utMatrix3x3.cpp" />
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\test\unit\utMatrix4x4.cpp" />
@@ -464,18 +461,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\googletest\googletest\src\gtest-all.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\ZERO_CHECK.vcxproj">
-      <Project>{180B02FE-A94F-3191-8E2C-AD355DC1137E}</Project>
+    <ProjectReference Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\ZERO_CHECK.vcxproj">
+      <Project>{F8208EB2-A914-38EE-BBDF-52217D6F0446}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
     <ProjectReference Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code\assimp.vcxproj">
-      <Project>{CC44BCEE-C33E-3322-934D-F65EF5494081}</Project>
+      <Project>{E362D91C-37D9-3344-A6FF-0AB88583B865}</Project>
       <Name>assimp</Name>
     </ProjectReference>
     <ProjectReference Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlibstatic.vcxproj">
-      <Project>{A1C1D02F-95D3-39D1-A6AC-B20F97EF8A15}</Project>
+      <Project>{1591A287-A00B-37B8-A55B-2C9E59FD6C98}</Project>
       <Name>zlibstatic</Name>
     </ProjectReference>
   </ItemGroup>

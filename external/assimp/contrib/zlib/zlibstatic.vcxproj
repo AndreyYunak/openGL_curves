@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A1C1D02F-95D3-39D1-A6AC-B20F97EF8A15}</ProjectGuid>
+    <ProjectGuid>{1591A287-A00B-37B8-A55B-2C9E59FD6C98}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -78,7 +78,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -92,16 +92,15 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,7 +113,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4131;4127;4244;4244</DisableSpecificWarnings>
@@ -126,7 +125,6 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
@@ -134,10 +132,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -150,7 +148,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4131;4127;4244;4244</DisableSpecificWarnings>
@@ -162,7 +160,6 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
@@ -170,10 +167,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -186,7 +183,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -199,16 +196,15 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <UseFullPaths>false</UseFullPaths>
-      <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;ASSIMP_BUILD_NO_M3D_IMPORTER;ASSIMP_BUILD_NO_M3D_EXPORTER;WIN32_LEAN_AND_MEAN;UNICODE;_UNICODE;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;C:\Users\Andrey\source\repos\Curves\openGL_curves;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\include;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\code;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\.;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -224,7 +220,7 @@
       <UseUtf8Encoding>Always</UseUtf8Encoding>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -232,12 +228,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -245,12 +241,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -258,12 +254,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves -BC:/Users/Andrey/source/repos/Curves/openGL_curves --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp -BC:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp --check-stamp-file C:/Users/Andrey/source/repos/Curves/openGL_curves/external/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -271,7 +267,7 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.27\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.27\Modules\Internal\CheckSourceCompiles.cmake;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
@@ -305,8 +301,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\contrib\zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\ZERO_CHECK.vcxproj">
-      <Project>{180B02FE-A94F-3191-8E2C-AD355DC1137E}</Project>
+    <ProjectReference Include="C:\Users\Andrey\source\repos\Curves\openGL_curves\external\assimp\ZERO_CHECK.vcxproj">
+      <Project>{F8208EB2-A914-38EE-BBDF-52217D6F0446}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
